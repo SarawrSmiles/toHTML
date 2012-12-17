@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>toHTML</title>
+<style>
+#main
+{
+	position: relative;
+	background-color: #e2e0df;
+	border-radius: 15px;
+	padding: 15px;
+	width: 850px;
+	height: 360px;
+}
+.src
+{
+	height: 350px;
+	width: 300px;
+	float: left;
+	background-color: rgba(100,100,100,0.2);
+	border: 0px;
+}
+.output
+{
+	position: relative;
+	top: -30px;
+	left: 0px;
+	width: 260px;
+	height: 164px;
+	background-color: rgba(100,100,100,0.2);
+	border: 0px;
+}
+.converted
+{
+	position:relative;
+	top: -30px;
+	left: 220px;
+	width: 260px;
+	height: 164px;
+	background-color: rgba(100,100,100,0.2);
+	padding: -50px;
+}
+#code
+{
+	position: absolute;
+	top: 2px;	
+	left: 550px;
+	height: 60px;
+	overflow: scroll;
+}
+#convert
+{
+	position:absolute;
+	top: 145px;
+	left: 440px;
+}
+#right_brackets
+{
+	position: absolute;
+	top: 18px;
+	right: 15px;
+}
+</style>
+</head>
+<body>
+<center>
+<img src="logo.png">
+<br>
+<br>
+<div id="main">
+<form method="post" action="">
+<img align="left" src="src.png">
+<textarea class="src" name="source">
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello World";
+   
+    return 0;
+}
+</textarea>
+<div id="convert"><img src="convert.png"></div>
+<br>
+<pre class="converted">
+</pre><pre id="code">
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>iostream</span><span style='color:#800000; '>></span>
+
+<span style='color:#508050; font-weight:bold; '>using</span> <span style='color:#508050; font-weight:bold; '>namespace</span> <span style='color:#0066dd; '>std</span><span style='color:#800080; '>;</span>
+
+<span style='color:#508050; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+    <span style='color:#603000; '>cout</span> <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> <span style='color:#800000; '>"</span><span style='color:#cc5555; '>Hello World</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+   
+    <span style='color:#508050; font-weight:bold; '>return</span> <span style='color:#778c77; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+>
+</pre>
+<textarea class="output" name="html">
+<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>iostream</span><span style='color:#800000; '>></span>
+
+<span style='color:#800000; font-weight:bold; '>using</span> <span style='color:#800000; font-weight:bold; '>namespace</span> <span style='color:#666616; '>std</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+    <span style='color:#603000; '>cout</span> <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>&lt;</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>Hello World</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+   
+    <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+</textarea>
+</form>
+<div id="right_brackets">
+<img  src="formatted.png"><br> <br>
+<img  src="html.png">
+
+</div>
+</div>
+</center>
