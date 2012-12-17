@@ -1,97 +1,99 @@
 <html>
-<head>
-<title>toHTML</title>
-<style>
-#main
-{
-	position: relative;
-	background-color: #e2e0df;
-	border-radius: 15px;
-	padding: 15px;
-	width: 850px;
-	height: 360px;
-}
-.src
-{
-	padding: 9px;
-	height: 350px;
-	width: 270px;
-	float: left;
-	background-color: rgba(100,100,100,0.2);
-	border: 0px;
-}
-.output
-{
-	position: relative;
-	top: -30px;
-	left:10px;
-	width: 260px;
-	height: 164px;
-	background-color: rgba(100,100,100,0.2);
-	border: 0px;
-	padding: 9px;
-}
-.converted
-{
-	position:relative;
-	top: -30px;
-	left: 220px;
-	width: 260px;
-	height: 164px;
-	background-color: rgba(100,100,100,0.2);
-	padding: -50px;
-}
-#code
-{
-	position: absolute;
-	top: 3px;	
-	left: 530px;
-	height: 164px;
-	width: 260px;
-	overflow: scroll;
-	text-align:left;
-}
-#convert
-{
-	position:absolute;
-	top: 145px;
-	left: 440px;
-}
-#right_brackets
-{
-	position: absolute;
-	top: 18px;
-	right: 15px;
-}
-</style>
-</head>
-<body>
-<center>
-<img src="logo.png">
-<br>
-<br>
-<div id="main">
-<form method="post" action="">
-<img align="left" src="src.png">
-<textarea class="src" name="source">
-<!-- SOURCE_TEXTAREA -->
+  <head>
+    <title>toHTML</title>
+    <style>
+      #main
+      {
+      position: relative;
+      background-color: #e2e0df;
+      border-radius: 15px;
+      padding: 15px;
+      width: 850px;
+      height: 360px;
+      }
+      .src
+      {
+      padding: 9px;
+      height: 350px;
+      width: 270px;
+      float: left;
+      background-color: rgba(100,100,100,0.2);
+      border: 0px;
+      }
+      .output
+      {
+      position: relative;
+      top: -30px;
+      left:10px;
+      width: 260px;
+      height: 164px;
+      background-color: rgba(100,100,100,0.2);
+      border: 0px;
+      padding: 9px;
+      }
+      .converted
+      {
+      position:relative;
+      top: -30px;
+      left: 220px;
+      width: 260px;
+      height: 164px;
+      background-color: rgba(100,100,100,0.2);
+      padding: -50px;
+      }
+      #code
+      {
+      position: absolute;
+      top: 3px;	
+      left: 530px;
+      height: 164px;
+      width: 260px;
+      overflow: scroll;
+      text-align:left;
+      }
+      #convert
+      {
+      position:absolute;
+      top: 145px;
+      left: 440px;
+      }
+      #right_brackets
+      {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img src="logo.png">
+      <br>
+      <br>
+      <div id="main">
+	<form method="post" action="">
+	  <img align="left" src="src.png">
+	  <textarea class="src" name="source">
+	    <!-- SOURCE_TEXTAREA -->
 
-</textarea>
-<div id="convert"><img width="80px" src="convert.png"></div>
-<br>
-<pre class="converted" style="text-align:left;">
-</pre><pre id="code">
-<!-- FORMATTED_PREVIEW -->
+	  </textarea>
+	  <div id="convert"><img width="80px" src="convert.png"></div>
+	  <br>
+	  <pre class="converted" style="text-align:left;">
+	  </pre>
+	  <pre id="code">
+	    <!-- FORMATTED_PREVIEW -->
+	  </pre>
 
-<textarea class="output" name="html">
-<!-- FORMATTED_TEXTAREA -->
+	  <textarea class="output" name="html">
+	    <!-- FORMATTED_TEXTAREA -->
+	  </textarea>
 
-</textarea>
-</form>
-<div id="right_brackets">
-<img  src="formatted.png"><br> <br>
-<img  src="html.png">
+	</form>
+	<div id="right_brackets">
+	  <img  src="formatted.png"><br> <br>
+	  <img  src="html.png">
 
-</div>
-</div>
-</center>
+	</div>
+      </div>
+    </center>
