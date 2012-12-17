@@ -64,6 +64,11 @@
       top: 18px;
       right: 15px;
       }
+      #do:hover 
+      {
+      cursor:pointer;
+      width: 90px;
+      }
     </style>
   </head>
   <body>
@@ -84,7 +89,7 @@ function doStuff()
 document.getElementById("code").innerHTML="Hello World";
 }
 </script>
-	  <div id="convert"><img width="80px" src="convert.png" onclick="doStuff()"></div>
+	  <div id="convert"><img id="do" width="80px" src="convert.png" onclick="doStuff()"></div>
 	  <br>
 	  <pre class="converted" style="text-align:left;">
 	  </pre>
