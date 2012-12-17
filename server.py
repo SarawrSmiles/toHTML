@@ -7,6 +7,13 @@ class MyHandler(BaseHTTPRequestHandler):
     def get_document(self, source, formatted):
         lines = []
 
+        document = open('index.html', 'r')
+        for line in document:
+            lines.append(line)
+        document.close()
+
+        return lines
+
         top = open('toHtmlTop.html', 'r')
         for line in top:
             lines.append(line)
@@ -82,15 +89,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# import SimpleHTTPServer
-# import SocketServer
-
-# PORT = 8000
-
-# Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-
-# httpd = SocketServer.TCPServer(("", PORT), Handler)
-
-# print "serving at port", PORT
-# httpd.serve_forever()
